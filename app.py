@@ -183,7 +183,7 @@ if bt:
     st.pyplot()
 
     df1 = pd.DataFrame(future_predicted_values)
-    st.markdown("### Next 30 days forecast")
+    st.markdown("### Next 365 days forecast")
     df1.rename(columns={0: "Predicted Prices"}, inplace=True)
     st.write(df1)
 
@@ -195,4 +195,4 @@ if bt:
     
 else:
     #displayed when the button is unclicked
-    st.write('A simple project by Swathy Ashok and Nikhil Anil kamble') 
+    st.write('A simple project by Swathy Ashok and Nikhil Anil Kamble') 
