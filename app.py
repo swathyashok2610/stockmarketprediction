@@ -182,16 +182,6 @@ if bt:
     plt.ylabel('Price')
     st.pyplot()
 
-
-    st.subheader('Stock Price vs 100-day Moving Average')
-    plt.plot(reliance_ma['Close'],label='Original data')
-    plt.plot(reliance_ma['100-day MA'],label='100-MA')
-    plt.legend()
-    plt.title('Stock Price vs 100-day Moving Average')
-    plt.xlabel('Date')
-    plt.ylabel('Price')
-    st.pyplot()
-
     df1 = pd.DataFrame(future_predicted_values)
     st.markdown("### Next 30 days forecast")
     df1.rename(columns={0: "Predicted Prices"}, inplace=True)
