@@ -15,7 +15,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name="Stock Market Prediction by Swathy Priya",
+    name="Stock Market Prediction by Swathy & Arnav",
     version=1.0,
     author="Swathy Priya Ashok",
     packages=find_packages(),
