@@ -195,4 +195,4 @@ if bt:
     
 else:
     #displayed when the button is unclicked
-    st.write('A simple project by Swathy Ashok (21MIA1116)') 
+    st.write('A simple project by Swathy Ashok and Nikhil Anil kamble') 
