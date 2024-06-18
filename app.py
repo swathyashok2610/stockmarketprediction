@@ -8,7 +8,7 @@ import model_building as m
 
 
 with st.sidebar:
-    st.markdown("# Stock Market Prediction by Arnav & Swathy")
+    st.markdown("# Stock Market Prediction by Nikhil  & Swathy")
     user_input = st.text_input('Please enter the stock name',value="RELIANCE.NS", help="Enter the name from YFinance")
 
     # user_input = st.text_input('Enter Stock Name', "ADANIENT.NS")
@@ -24,7 +24,7 @@ if bt:
     df = yf.download(user_input, start=START, end=END)
     plotdf, future_predicted_values =m.create_model(df)
     df.reset_index(inplace = True)
-    st.title('Stock Market Prediction by Swathy & Arnav')
+    st.title('Stock Market Prediction by Swathy & Nikhil')
     st.header("Data We collected from the source using yfinance library")
     st.write(df)
 
